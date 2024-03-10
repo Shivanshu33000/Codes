@@ -1,0 +1,91 @@
+Code for Arrays
+
+#include <iostream>
+using namespace std;
+
+void arrayM(int i){
+    int k[] = {1,2,3,4,5,6,7,8,9,10};
+        cout << "The Size Of The Array -----> " << sizeof(k) << endl;
+        cout << "Your number from array -----> " << k[i] << endl;
+        cout << endl;
+        
+}
+int main(){
+    int t,i;
+    cout << "Repetation : - ";
+    cin >> t;
+    for(t;t--;){
+        cout << " Enter the number : -  ";
+        cin >> i;
+        arrayM(i);
+    }
+   
+}
+
+
+#include <iostream>
+using namespace std ;
+int arrayAd(int size,int i){
+    for(i;i<= size;i++){
+             sum = sum + a[i];
+         }
+
+    return sum;
+}
+
+int main (){
+       int i , n,;
+       cin >> n;
+        int a[] = {1,2,3,4,5,6,7,8,9};
+        int size = n;
+        
+        cout << sum << endl;
+        
+         
+}
+
+
+Code for Array counting 
+
+#include <bits/stdc++.h>
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main (){
+  int t;
+  cout << "Enter The Rep :- ";
+  cin >> t;
+  while (t--)
+  {
+       int count = 0 ;
+       for(int i = 0 ; i <= t ;i++)
+       {
+           cout << "The Size Of Array :- ";
+           cin >> i;
+           int A[i];
+           
+       
+       for (int j = 0 ; j < i ; j++)
+       {
+           cout << count << " ";
+           count++;
+       }
+       cout << endl;
+       }
+       }
+}
+
+Code For Input Elements By User.
+
+// Code For Input Elements In Array
+#include <iostream>
+using namespace std;
+int main(){
+    int t;
+    cout << "Ente the rep :- ";cin >> t;
+    while(t--){
+    int n;
+    cout << "Enter The Size of Array :- ";cin >> n;
+    int A[n];
+    cout << "Enter The Elements In Array :- ";cin >> A[n];
+    cout << A[n] << " ";}
