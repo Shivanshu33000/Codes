@@ -1,0 +1,16 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int n = 0;int array[n];
+    cout << "Enter The Size Of The Array : - ";
+    cin >> n;
+    for(int x = 0 ; x < n ; x++ ){
+        cout << "Enter The Element : - ";
+        cin >> array[x];
+    } int leng = sizeof(array)/sizeof(array[0]);
+    sort(array,array + leng);
+    for(int i = 0 ; i < n ; i++){
+        cout <<"  "<<array[i];
+    }
+
+}
