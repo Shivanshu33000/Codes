@@ -1,0 +1,29 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+    int a,b,c,ans;
+    cout << "Enter The First number : ";
+    cin >> a;
+    cout << "Enter The Second number: ";
+    cin >> b;
+    cout << "For your calculation Addtion =1 , Sub = 2 , Mul = 3 , Div = 4 , For reminer any number";
+    cout << "Enter The Your Calculation :  ";
+    cin >> c;
+    switch(c){
+        case 1 :
+         ans = a + b;
+        break;
+        case 2 :
+        ans = a - b;
+        break;
+        case 3 :
+        ans = a * b;
+        break;
+        case 4 :
+        ans = a / b;
+        break;
+        default :
+        ans = a % b;
+    }
+    cout << ans ;
+}
