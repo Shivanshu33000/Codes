@@ -1,0 +1,10 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(){, 
+ string a;
+ cout << "Enter The Element : ";
+ cin >> a;
+transforms(a.begin(),a.end(),a.begin(),:: tolower){
+cout << a << endl;
+}
+}
