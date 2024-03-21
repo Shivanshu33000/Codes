@@ -1,0 +1,32 @@
+#include<bits/stdc++.h>
+using namespace std;
+int binarysearch(int A[],int target,int size){
+    int low = 0;
+    int high = size - 1 ;
+    while(low <= high){
+        int mid = low + (high - low )/2;
+        if(A[mid] == target){
+            return mid;
+        }
+        else if(A[mid] < target){
+            low = mid + 1;
+        }
+        else{
+            low = mid - 1;
+        }
+    }
+    return -1;
+}
+int main(){
+    int A[] = {1,2,3,4,5};
+    int target = 4;
+    int n = sizeof(A)/sizeof(A[0]);
+    int index = binarysearch(A,target,n);
+    if(index != -1){
+        cout << "Element is in the index : " << index;
+    }
+    else{
+    cout << "Element is not in array !";
+        
+    }
+}
